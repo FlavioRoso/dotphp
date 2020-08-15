@@ -1,0 +1,22 @@
+{
+    
+    "name" :"Kender/mvc",
+    "require" :{
+        "php":">=5.6",
+        "twig/twig": "^3.0"
+    },
+    "authors":[
+        {
+            "name":"Flavio Roso",
+            "email":"flavio.roso@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" :{
+            "Kender\\":"Kender/",
+            "App\\":"App/"
+        }
+    }
+     
+
+}

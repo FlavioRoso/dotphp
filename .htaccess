@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+ErrorDocument 404 index.php
+
+RewriteRule . index.php [L]
+
+
+
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteCond %{HTTP_HOST} !^www\.
+
+# ARMAZENAMENTO EM CACHE
+<FilesMatch "\.(js|css|swf)$">
+  Header set Cache-Control "max-age=86400"
+</FilesMatch>
+
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
+
+</IfModule>
+
