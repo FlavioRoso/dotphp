@@ -1,6 +1,5 @@
 {
-    
-    "name" :"Kender/mvc",
+
     "require" :{
         "php":">=5.6",
         "twig/twig": "^3.0"
@@ -13,7 +12,7 @@
     ],
     "autoload" : {
         "psr-4" :{
-            "Kender\\":"Kender/",
+            "Enkel\\":"Enkel/",
             "App\\":"App/"
         }
     }

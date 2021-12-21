@@ -8,13 +8,12 @@ define('DS', '/');
 
 //error_reporting(0);
 
-
-
-require_once 'Kender/App.php';
 require_once 'vendor/autoload.php';
 
+require_once 'Enkel/App.php';
 
-\Kender\App::run();
+
+\Enkel\App::run();
 
 
 
